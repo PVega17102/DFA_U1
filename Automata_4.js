@@ -31,14 +31,16 @@ button4.addEventListener('click', (event) => {
     switch (state) {
       case 0:
         if (char == 'f') {
-          return char === 'f' ? 10 : 0;
-        } else {
-          return char === 'c' ? 10 : 0;
+          return char === 'f' ? 10 : 10;
         }
+        break;
       case 10:
         if (char == 'c') {
           return char === 'c' ? 0 : 0;
         }
+        break;
+      default:
+        break;
     }
   };
   const start = 0;
