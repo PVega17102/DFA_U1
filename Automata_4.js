@@ -31,7 +31,9 @@ button4.addEventListener('click', (event) => {
     switch (state) {
       case 0:
         if (char == 'f') {
-          return char === 'f' ? 10 : 10;
+          return char === 'f' ? 10 : 0;
+        } else {
+          return char === 'c' ? 10 : 0;
         }
       case 10:
         if (char == 'c') {
